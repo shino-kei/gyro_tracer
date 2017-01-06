@@ -27,7 +27,7 @@ http://www.robotc.net/forums/viewtopic.php?f=1&t=9673
 * ライントレースしきい値
 
 ## TODO
-[] balancer.cの動作確認
+- [ ] balancer.cの動作確認
 
 
 
