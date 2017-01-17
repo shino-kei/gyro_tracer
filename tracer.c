@@ -491,7 +491,8 @@ task main()
 
          lineError = ((SensorValue(lightSensor) - threshould) - (SensorValue(nxtlightSensor)-nxtthreshould)*nxtlightGain)/2;
          lineErrordiff = lineError - lineErrorOld;
-         lineErrorSum += lineErrorSum;
+         lineErrorOld = lineError;
+         lineErrorSum += lineError;
 
          steer = lineError*kpline + lineErrordiff*kdline + lineErrorSum*kiline;
          setMotorPower( steer, pidOutput );
