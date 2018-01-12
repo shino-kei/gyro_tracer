@@ -23,6 +23,15 @@ http://robotsquare.com/2014/06/23/tutorial-building-balanc3r/
 倒立制御のコアな部分に関しては，下記リンクのコードをベースとしています．
 tracer.cでは左右モータのパワー比を変化させることにより左右カーブを実現し，下向きに取り付けられたカラーセンサ値に応じてこのパワー比を変化させることによって，ライントレースを行います．
 
+```
+// averagePower : 並進運動入力
+// extra_pwr    : 回転運動入力
+
+pwr_c = averagePower - extra_pwr;
+pwr_b = averagePower + extra_pwr;
+
+```
+
 http://www.robotc.net/forums/viewtopic.php?f=1&t=9673
 
 
