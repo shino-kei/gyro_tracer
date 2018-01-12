@@ -12,7 +12,7 @@ http://robotsquare.com/2014/06/23/tutorial-building-balanc3r/
 
 別のロボットの場合，倒立制御の制御パラメータを変更する必要があります．
 
-ライントレースのサンプルプログラムでは，ラインを挟むようにカラーセンサとnxt光センサをそれぞれ1個ずつ配置しています．また，2つのセンサの感度は異なるので，nxtlightGainを乗じることで左右の計測値が吊り合うよう補正しています．
+ライントレースのサンプルプログラムでは，ラインを挟むようにカラーセンサとnxt光センサをそれぞれ1個ずつ配置しています．また，2つのセンサの感度は異なるので，nxtlightGainを乗じることで左右の計測値が吊り合うよう補正しています．[[リンク]](https://github.com/shino-kei/gyro_tracer/blob/master/tracer.c#L492)
 
 > lineError = ( (SensorValue(lightSensor) - threshould) - (SensorValue(nxtlightSensor)-nxtthreshould) * nxtlightGain )/2;
 
